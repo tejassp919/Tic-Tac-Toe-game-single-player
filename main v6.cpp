@@ -427,7 +427,9 @@ void intelligence() {
 	// this to make a line and win
 	else
 	{
-		if (mat[0][0] == 'O'&&mat[0][1] == 'O'&& mat[0][2] == '-') { mat[0][2] = 'O'; }     // ***
+		//defend first
+		
+		if (mat[0][0] == 'O'&&mat[0][1] == 'O'&& mat[0][2] == '-') { mat[0][2] = 'O'; }          // ***
 		else if (mat[0][1] == 'O'&&mat[0][2] == 'O'&& mat[0][0] == '-') { mat[0][0] = 'O'; }     //
 		else if (mat[0][2] == 'O'&&mat[0][0] == 'O'&& mat[0][1] == '-') { mat[0][1] = 'O'; }     //
 
@@ -459,7 +461,7 @@ void intelligence() {
 		else if (mat[1][1] == 'O'&&mat[2][2] == 'O'&& mat[0][0] == '-') { mat[0][0] = 'O'; }     //  *
 		else if (mat[2][2] == 'O'&&mat[0][0] == 'O'&& mat[1][1] == '-') { mat[1][1] = 'O'; }     //   *
 
-																								 // this is to stop player to win
+		//attack																					 // this is to stop player to win
 
 		else if (mat[0][0] == 'X'&&mat[0][1] == 'X'&& mat[0][2] == '-') { mat[0][2] = 'O'; }     // ***
 		else if (mat[0][1] == 'X'&&mat[0][2] == 'X'&& mat[0][0] == '-') { mat[0][0] = 'O'; }     //
