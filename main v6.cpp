@@ -13,19 +13,19 @@ struct scoredata
 };
 scoredata s1;
 
+//used as a signature of the creator for the game
 void open() {
 	cout << endl << endl << endl;
 	cout << "      ##########################################" << endl;
 	cout << "      ##                                      ##" << endl;
-	cout << "      ##               Made By  :-            ##" << endl;
+	cout << "      ##                Made By  :-           ##" << endl;
 	cout << "      ##                                      ##" << endl;
-	cout << "      ##          Class XII [2016-17]         ##" << endl;
-	cout << "      ##                                      ##" << endl;
-	cout << "      ##           Tejas Patil (210)          ##" << endl;
+	cout << "      ##               Tejas   Patil          ##" << endl;
 	cout << "      ##                                      ##" << endl;
 	cout << "      ##########################################" << endl;
 }
 
+//creates a class for simulating the properties of a player
 class gamer {
 	float to , tx, td;
 
@@ -122,8 +122,8 @@ void menu() {
 	else if (plaval == 4) { go.newone(); }
 
 }
-//display
 
+//This  displays the state of the game at any point
 void display()
 {
 	system("cls");
