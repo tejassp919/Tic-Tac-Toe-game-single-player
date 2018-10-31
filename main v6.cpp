@@ -156,7 +156,8 @@ void display()
 	cout << "      ##########################################" << endl;
 }
 
-//input and assigning value
+//input the position number that is to be filled with the player's charachter
+//and changes "-" to the player's charachter.
 
 void input() {
 
